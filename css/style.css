@@ -1,0 +1,43 @@
+:root {
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--Very-Light-Grayish-Blue);
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bmi-box{
+    background-color: var(--Very-Light-Grayish-Blue);
+    border: 5px solid var(--Dark-Grayish-Blue);
+    width: 50%;
+    height: 400px;
+    margin-top: 50px;
+}
