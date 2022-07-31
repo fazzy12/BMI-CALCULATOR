@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=
     Cormorant+SC:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+        <!-- grid -->
+        <!-- <link rel="stylesheet" href="css/7.1 Grid.css"> -->
 
 
-    <title>BMI-CALCULATOR</title>
-</head>
-<body>
-    <class="header-containner">
-        <h1>BMI-CALCULATOR</h1>
-        <span class="eicon-weight"></span>
-    </div>
+        <title>BMI-CALCULATOR</title>
+    </head>
+
+    <body>
+        <!-- heading container -->
+        <class="header-containner">
+            <h1>BMI-CALCULATOR</h1>
     
-    <!-- box -->
-    <div class="bmi-box row bmi-box-primary">
+            </div>
+    
+            <!-- box -->
+            <div class="bmi-box row bmi-box-primary">
+                <!-- numbers container -->
+                <div class=" row value-container">
+    
+                    <div class="bmi-values">
+                        <div class="col span-1-of-2">
+                            <div>
+                                <h3> Height 0.00 kg</h3>
+                            </div>
+                            <div>
+                                <input type="range" min="0" max="100" value="0" class="slider" id="myrange"/>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <div>
+                                <h3> Weight 0.00 cm</h3>
+                            </div>
+                            <div>
+    
+                            </div>
+                            <input type="range" min="0" max="100" value="0" class="slider" id="myrange"/>
+                        </div>
+                    </div>
+                    <button class="btn bmi-btn--check">check bmi</button>
+                    
+                    
+                </div>
+                
+                <!-- overweight -->
+                <h2 class="bmi-daig bmi-overweight">
+                    overweight !
+                </h2>
+                <!-- underweight -->
+                <h2 class="bmi-daig bmi-underweight">
+                    Underweight !
+                </h2>
+                <!-- normalweight -->
+                <h2 class="bmi-daig bmi-normalweight">
+                    normalweight !
+                </h2>
+                <!-- obese -->
+                <h2 class="bmi-daig bmi-obese">
+                    Obese !
+                </h2>
+            <!-- bmi result -->
+            <h1 class="bmi-result"> 29.9 kg </h1>
+    
+            </div>
+    
+            <script src="js/index.js"></script>
+    </body>
 
-    </div>
-
-    <script src="js/index.js"></script>
-</body>
 </html>

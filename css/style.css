@@ -1,10 +1,10 @@
+/* basic setup */
+
 :root {
     --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
     --Light-Grayish-Blue: hsl(234, 14%, 74%);
     --Grayish-Blue: hsl(233, 13%, 49%);
     --Dark-Grayish-Blue: hsl(232, 13%, 33%);
-
-
 }
 
 * {
@@ -25,19 +25,91 @@ html {
     margin: 0 auto;
 }
 
-body{
+body {
     background-color: var(--Very-Light-Grayish-Blue);
 }
-
-h1{
+/* reusable styles */
+h1,
+h2 {
     text-align: center;
     margin-top: 20px;
 }
 
-.bmi-box{
-    background-color: var(--Very-Light-Grayish-Blue);
-    border: 5px solid var(--Dark-Grayish-Blue);
+button{
+    width: 50%;
+    padding: 10px;
+    height: 50px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: var(--Very-Light-Grayish-Blue);
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.bmi-btn--check{
+    transform: translate(50%, 600%);
+    -webkit-transform: translate(50%, 600%);
+    -moz-transform: translate(50%, 600%);
+    -ms-transform: translate(50%, 600%);
+    -o-transform: translate(50%, 600%);
+}
+
+
+.bmi-box {
+    background: linear-gradient(0deg, hsl(240, 78%, 98%) 36%, hsl(234, 14%, 74%) 61%);
+    border: 4px solid var(--Dark-Grayish-Blue);
     width: 50%;
     height: 400px;
     margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
+
+.bmi-values{
+    position: absolute;
+    display: flex;
+    margin-top: 200px;
+    transform: translate(45%, 50%);
+    -webkit-transform: translate(45%, 50%);
+    -moz-transform: translate(45%, 50%);
+    -ms-transform: translate(45%, 50%);
+    -o-transform: translate(45%, 50%);
+}
+
+.col:last-child { margin-left: 50px; }
+
+
+.bmi-result {
+    font-size: 70px;
+    /* display: none; */
+}
+
+input{
+    margin-top: 10px;
+}
+
+.bmi-daig{
+    margin-top: 5px;
+}
+
+.bmi-overweight{
+    /* display: none; */
+}
+.bmi-underweight{
+    display: none;
+}
+.bmi-normalweight{
+    display: none;
+}
+.bmi-obese{
+    display: none;
+}
+
