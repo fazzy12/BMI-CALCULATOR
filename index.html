@@ -32,45 +32,51 @@
                     <div class="bmi-values">
                         <div class="col span-1-of-2">
                             <div>
-                                <h3> Height 0.00 kg</h3>
+                                <h3> Height <span id="value">0</span> cm</h3>
                             </div>
                             <div>
-                                <input type="range" min="0" max="100" value="0" class="slider" id="myrange"/>
+                                <input type="range" min="0" max="300" value="0" class="slider" id="myrange"/>
                             </div>
                         </div>
                         <div class="col span-1-of-2">
                             <div>
-                                <h3> Weight 0.00 cm</h3>
+                                <h3> Weight <span id="value1">0</span> kg</h3>
                             </div>
                             <div>
     
                             </div>
-                            <input type="range" min="0" max="100" value="0" class="slider" id="myrange"/>
+                            <input type="range" min="0" max="300" value="0" class="slider" id="myrange1"/>
                         </div>
                     </div>
-                    <button class="btn bmi-btn--check">check bmi</button>
+                    <button class="btn bmi-btn--check" id="bmi">check bmi</button>
                     
                     
                 </div>
                 
+                <!-- result -->
+                <h2 class="bmi-daig bmi-result-description">
+                    Bmi result !
+                </h2>
+                <h2 class="height-error" id="height-error"></h2>
+                <h2 class="weight-error" id="weight-error"></h2>
                 <!-- overweight -->
-                <h2 class="bmi-daig bmi-overweight">
+                <!-- <h2 class="bmi-daig bmi-overweight">
                     overweight !
-                </h2>
+                </h2> -->
                 <!-- underweight -->
-                <h2 class="bmi-daig bmi-underweight">
-                    Underweight !
-                </h2>
+                <!-- <h2 class="bmi-daig bmi-underweight"> -->
+                    <!-- Underweight ! -->
+                <!-- </h2> -->
                 <!-- normalweight -->
-                <h2 class="bmi-daig bmi-normalweight">
-                    normalweight !
-                </h2>
+                <!-- <h2 class="bmi-daig bmi-normalweight"> -->
+                    <!-- normalweight ! -->
+                <!-- </h2> -->
                 <!-- obese -->
-                <h2 class="bmi-daig bmi-obese">
-                    Obese !
-                </h2>
+                <!-- <h2 class="bmi-daig bmi-obese"> -->
+                    <!-- Obese ! -->
+                <!-- </h2> -->
             <!-- bmi result -->
-            <h1 class="bmi-result"> 29.9 kg </h1>
+            <h1 class="bmi-result" id="bmi-result"> 0 kg </h1>
     
             </div>
     

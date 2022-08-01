@@ -35,11 +35,85 @@ h2 {
     margin-top: 20px;
 }
 
+.slider{
+    appearance: none;
+    background: linear-gradient(90deg, hsl(240, 78%, 98%) 60%, hsl(240, 78%, 98%) 60%);
+    outline: none;
+    width: 100%;
+    height: 10px;
+    opacity: 0.7;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 1px 0px 10px 1px var(--Dark-Grayish-Blue);
+}
+
+/* .slider:hover{
+    opacity: 1;
+} */
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: var(--Dark-Grayish-Blue);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slider::-moz-range-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: var(--Grayish-Blue);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* .slider::after{
+    content: "300";
+    color: var(--Dark-Grayish-Blue);
+    font-size: 2rem;
+    position: absolute;
+    left: 80%;
+    top: 26%;
+}
+
+.slider::before{
+    content: "0";
+    color: var(--Dark-Grayish-Blue);
+    font-size: 2rem;
+    position: absolute;
+    left: 12%;
+    top: 26%;
+} */
+
 button{
+    font-size: 20px;
+    font-weight: 700;
     width: 50%;
     padding: 10px;
     height: 50px;
     margin-top: 10px;
+    cursor: pointer;
     text-transform: uppercase;
     color: var(--Very-Light-Grayish-Blue);
     background-color: var(--Dark-Grayish-Blue);
@@ -48,6 +122,10 @@ button{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+button:hover{
+    background-color: var(--Grayish-Blue);
 }
 
 
@@ -77,11 +155,11 @@ button{
     position: absolute;
     display: flex;
     margin-top: 200px;
-    transform: translate(45%, 50%);
-    -webkit-transform: translate(45%, 50%);
-    -moz-transform: translate(45%, 50%);
-    -ms-transform: translate(45%, 50%);
-    -o-transform: translate(45%, 50%);
+    transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    -o-transform: translate(50%, 50%);
 }
 
 .col:last-child { margin-left: 50px; }
@@ -101,7 +179,7 @@ input{
 }
 
 .bmi-overweight{
-    /* display: none; */
+    display: none;
 }
 .bmi-underweight{
     display: none;
