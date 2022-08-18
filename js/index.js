@@ -1,4 +1,4 @@
-// slider elements
+// slider element
 
 // slide 1
 let slider = document.getElementById('myrange');
